@@ -34,6 +34,7 @@ img {
   height: auto;
   margin: 30px auto;
   border: 2px black solid;
+  max-width: 100%;
 }
 
 .btn {
@@ -41,5 +42,6 @@ img {
   margin: 0 auto;
   padding: 20px;
   width: 300px;
+  max-width: 100%;
   border-radius: 15px;
 }
