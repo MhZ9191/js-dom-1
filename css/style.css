@@ -33,7 +33,7 @@ img {
   width: 300px;
   height: auto;
   margin: 30px auto;
-  border: 2px black solid;
+
   max-width: 100%;
 }
 
@@ -44,4 +44,24 @@ img {
   width: 300px;
   max-width: 100%;
   border-radius: 15px;
+}
+
+.accesa {
+  color: blue;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-family: fantasy;
+  background-color: rgb(143, 236, 143);
+  border: 2px blue solid;
+}
+
+.spenta {
+  color: rgb(143, 236, 143);
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-family: fantasy;
+  background-color: blue;
+  border: 2px rgb(143, 236, 143) solid;
 }
