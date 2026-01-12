@@ -49,6 +49,14 @@ img {
   max-width: 100%;
 }
 
+.acc {
+  transform: translateX(-16px);
+}
+
+.spn {
+  transform: translateX(30px);
+}
+
 .btn {
   display: block;
   margin: 0 auto;
@@ -56,6 +64,14 @@ img {
   width: 300px;
   max-width: 100%;
   border-radius: 15px;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px) translateX(2px);
+  transition: transform 0.3s ease;
+  box-shadow: 5px 5px 10px black;
 }
 
 .accesa {
@@ -82,4 +98,8 @@ img {
   width: 300px;
   margin: 30px auto;
   text-align: center;
+}
+
+#boom {
+  display: none;
 }

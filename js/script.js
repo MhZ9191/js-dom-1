@@ -15,6 +15,8 @@ btn.addEventListener("click", function () {
   const btnClass = btn.classList;
   if (btnText.toLocaleLowerCase().includes("accendi")) {
     imageLamp.src = "./img/yellow_lamp.png";
+    imageLamp.classList.add("acc");
+    imageLamp.classList.remove("spn");
     btn.innerText = "SPEGNI";
     btnClass.remove("accesa");
     btnClass.add("spenta");
@@ -22,6 +24,8 @@ btn.addEventListener("click", function () {
   }
   if (btnText.toLocaleLowerCase().includes("spegni")) {
     imageLamp.src = "./img/white_lamp.png";
+    imageLamp.classList.add("spn");
+    imageLamp.classList.remove("acc");
     btn.innerText = "ACCENDI";
     btnClass.remove("spenta");
     btnClass.add("accesa");
