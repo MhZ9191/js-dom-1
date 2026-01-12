@@ -10,7 +10,10 @@ const testBody = document.querySelector("body");
 
 const testCounter = document.getElementById("counterclick");
 let counter = 0;
-btn.addEventListener("click", function () {
+const rndNumber = Math.floor(Math.random() * 5 + 2);
+btn.addEventListener("click", testclick);
+
+function testclick() {
   btnText = btn.innerText;
   const btnClass = btn.classList;
   if (btnText.toLocaleLowerCase().includes("accendi")) {
@@ -32,7 +35,15 @@ btn.addEventListener("click", function () {
     counter++;
   }
   testCounter.lastChild.innerText = counter;
-});
+  if (counter >= rndNumber) {
+    imageLamp.src = "./img/lamp.png";
+    btn.removeEventListener("click", testclick);
+    btnClass.add("rotto");
+    btnClass.remove("acc", "spn");
+    btn.innerText = "ROTTA";
+    alert("Si è rotta =(");
+  }
+}
 
 testBody.addEventListener("mousemove", function (e) {
   scrX.innerText = e.screenX;

@@ -93,6 +93,15 @@ img {
   background-color: blue;
   border: 2px rgb(143, 236, 143) solid;
 }
+.rotto {
+  color: blue;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-family: fantasy;
+  background-color: grey;
+  border: 2px blue solid;
+}
 
 #counterclick {
   width: 300px;
